@@ -1,0 +1,120 @@
+/*********************
+*製品情報
+ ********************/
+/*====================
+　*製品種類一覧
+====================*/
+.taxonomy-description{
+	padding:1rem;
+}
+#classifications{
+	flex-wrap:wrap;
+	justify-content:space-between;
+	background: #fff;
+	border: 1px solid #eaeaea;
+	padding:0.5rem;
+	margin-bottom: 30px;
+}
+#classifications a{
+	display:flex;
+	justify-contehnt:center;
+}
+@media only screen and (min-width: 881px) {
+	#classifications a{
+		width:32%;
+	}
+}
+@media only screen and (max-width: 880px) {
+	#classifications a{
+		width:48%;
+	}
+}
+#classifications a img{
+	width:auto;
+	max-width:100%;
+	height:auto;
+	margin:0.5rem auto;
+}
+.box{
+	float:left;
+	clear:left;
+}
+.box h2{
+	width:700px;
+	font-weight:bold;
+	font-size:14px;
+	background:#666666;
+	color:#ffffff;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px; 
+	padding:3px 6px;
+	margin:10px 0 5px 0;
+}
+.lineup{
+	width:229px;
+	margin:5px 5px 5px 0;
+	float:left;
+	text-align:center;
+}
+.lineup img{
+	width:200px;
+	height:80px;
+	margin:5px auto;
+}
+/*====================
+　*classificationアーカイブ
+====================*/
+.classification_archive h2{
+	font-size:100%;
+	margin:0;
+}
+.classification_archive .flex{
+	flex-wrap:wrap;
+}
+.classification_archive article{
+	display:flex;
+	justify-content:flex-start;
+}
+	.classification_archive .flex .post-item:hover{
+		background:rgba(200,200,200,.2);
+	}
+@media only screen and (min-width: 881px) {
+	.classification_archive article{
+		width:30%;
+	}
+	.classification_archive article:not(:nth-of-type(3n)){
+		margin-right:5%;
+	}
+	.classification_archive h2{
+		padding-top:0.5rem;
+		border-top:1px silver solid;
+	}
+	/*.classification_archive p{
+		display:none;
+	}*/
+	
+}
+@media only screen and (max-width: 880px) {
+	.classification_archive .flex{
+		justify-content:space-between;
+	}
+	.classification_archive .flex .post-item a{
+		display:flex; 
+		justify-content:space-between;
+		align-items:flex-start;
+	}
+	.classification_archive .flex .post-item .thumbnail{
+		width:40%;
+	}
+	.classification_archive .flex .post-item .info{
+		display:block;
+		width:55%;
+		padding:0;
+	}
+	.classification_archive h2{
+		border-top:0;
+		border-bottom:1px silver solid;
+		margin-bottom:0.5em;
+	}
+}

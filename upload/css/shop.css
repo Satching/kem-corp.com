@@ -1,0 +1,189 @@
+/*
+ *販売店・整備店一覧
+********************/
+@media only screen and (max-width: 880px) {
+	.shoptype{
+		display: block;
+	}	
+}
+
+/*
+ *販売店・整備店一覧
+********************/
+/*地区ごとインデックス*/
+#area_index{
+	display: flex;
+	flex-wrap: wrap;
+}
+/**/
+#area_index > *{
+	display: block;
+	border-radius: 0.5em;
+	text-align: center;
+}
+@media only screen and (min-width: 881px) {
+	#area_index > *{
+		width:calc(100% / 6 - 1rem);
+		padding: 1rem 0;
+		margin: 0.5rem;
+		color:#fff;
+	}
+}
+/**/
+@media only screen and (min-width: 881px) {
+	#area_index > a{
+		background-color: #d8a600;
+		transition: background 0.25s linear;
+	}
+	#area_index > p{
+		background-color: #ddd;
+	}
+	#area_index > a:hover {
+		background-color: #bf8d00;
+	}
+}
+@media only screen and (max-width: 880px) {
+	#area_index > a{
+		width:30%;
+		padding: 0.5rem 0;
+		margin: 0.5rem 0;
+	}
+	#area_index > p{
+		display:none;
+	}
+}
+/*店舗表示部*/
+.area-archive {
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+@media only screen and (min-width: 881px) {
+	.area-archive .post-item {
+		width: calc(50% - 0.5rem);
+		margin: 0 0 1rem 0;
+		padding: 1.5rem;
+	}
+	.taxonomy-description {
+		padding: 1rem;
+	}
+	.kind_wrap {
+		padding-top: 2rem;
+	}
+	.kind_wrap h2 {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 1rem;
+		margin-bottom: 1rem;
+		border: 1px solid #ddd;
+		font-size: 150%;
+	}
+}
+/*ショップリスト*/
+p.name {
+	padding: 0.5em 0;
+	font-weight: bold;
+	font-size: 110%;
+}
+.area-archive .name a {
+	color: #aaa;
+}
+/*.shop_info p{
+	position:relative;
+  min-height: 1.5em;
+	padding-left:4.5em;
+	border-bottom: 1px solid #eee;
+	line-height:1.5;
+}*/
+.shop_info p {
+	display: flex;
+	flex-wrap: wrap;
+	min-height: 1.5em;
+	padding-bottom: 0.2rem;
+	margin-bottom: 0.2rem;
+	border-bottom: 1px solid #eee;
+	line-height: 1.5;
+}
+.shop_info p:before {
+	display: block;
+	font-weight: bold;
+	width:4.5em;
+}
+.shop_info p span {
+	width:calc(100% - 4.5em);
+}
+.shop_info .address:before,
+.shop_info .address span,
+.shop_info .model:before,
+.shop_info .model span{
+	width: 100%;
+}
+.shop_info .address:before {
+	content: "住　　所";
+}
+.shop_info .model:before {
+	content: "対応車種";
+}
+.shop_info .tel:before {
+	content: "T　E　L";
+}
+.shop_info .access:before {
+	content: "担　　当";
+}
+#shop .category {
+	width: 223px;
+	padding: 10px;
+	float: left;
+	text-align: center;
+}
+#shop h3 {
+	background: #ffffff;
+	color: #888888;
+	padding: 0.5em;
+}
+#shop .category img {
+	width: 200px;
+	height: auto;
+	margin: 5px auto;
+}
+/*エリア名*/
+#shop h2 {
+	font-size: 14px;
+	background: #666666;
+	color: #ffffff;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	padding: 3px 6px;
+	margin: 10px 0 5px 0;
+}
+/*エリア名内戻るボタン*/
+h2 a.to-top{
+	display: block;
+	width: 50px;
+	height: 50px;
+	background-color: #d8a600;
+	border-radius: 3px;
+	color: #fff;
+	font-size: 16px;
+	line-height: 50px;
+	text-align: center;
+	cursor: pointer;
+	transition: background 0.25s linear;
+}
+h2 a.to-top:hover {
+		background-color: #bf8d00;
+	}
+h2 .to-top i{
+	width: 50px;
+	height: 40px;
+	line-height: 40px;
+	border: none;
+	border-radius: 3px;
+	transition: background 0.25s linear;
+}
+@media only screen and (max-width: 880px) {
+h2 a.to-top{
+	display: none;
+	}
+}

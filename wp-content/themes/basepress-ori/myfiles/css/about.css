@@ -1,0 +1,19 @@
+@media only screen and (min-width: 881px){
+	.flex{
+		justify-content:space-between;
+	}
+	.text{
+		width:65%;
+	}
+	.image{
+		width:30%;
+	}
+}
+@media only screen and (max-width: 880px){
+	.flex{
+		flex-direction:column;
+	}
+	.flex img{
+		margin-bottom:2em;
+	}
+}

@@ -1,0 +1,76 @@
+/************************
+* h2
+************************/
+h2{
+	font-weight:bold;
+	font-size:18px;
+	margin:10px 0;
+	background: #999999;
+	color:#ffffff;
+	border-radius:3px;
+	padding:5px;
+}
+/************************
+* アイコン付き文字
+************************/
+.number{
+	margin:1rem 0;
+}
+.number .flex{
+	align-items:center;
+}
+.number i:before,
+.number p{
+	font-size:2.3rem;
+	font-weight:bold;
+	margin:0;
+}
+.number i:before{
+	padding-right:0.5rem;
+}
+.number span{
+	font-size:0.9rem;
+	font-weight:normal;
+}
+
+/************************
+* FAX用紙
+************************/
+#fax .download{
+	justify-content:space-around;
+	width:100%;
+}
+#fax .download a{
+	width:15%;
+}
+
+/************************
+* お問い合わせフォーム
+************************/
+.formBg{
+	background:#FFFFCC;
+	border: solid #cccccc 1px;
+	padding:1rem;
+}
+dl.form {
+	margin-bottom: 1em;
+}
+dl.form dt{
+	font-weight:bold;
+	margin-bottom:0.5rem;
+}
+dl.form dd{
+	margin-bottom:1rem;
+}
+input[type="text"],
+input[type="number"],
+input[type="range"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="image"],
+select{
+	height:2rem;
+}
+	

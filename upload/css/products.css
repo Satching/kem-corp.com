@@ -1,0 +1,279 @@
+/******************************
+ *導入部
+ ******************************/
+@media only screen and (min-width: 881px) {
+	.product > header {
+		position: relative;
+	}
+}
+@media only screen and (max-width: 880px) {
+	.product > header {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+}
+/***文字アイコン***/
+@media only screen and (min-width: 881px) {
+	.ico_sort {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		margin: auto;
+		height: 2em;
+	}
+}
+.ico_sort p {
+	color: #ffffff;
+	font-weight: bold;
+	padding: 0.3em 0.5em;
+	line-height: 1.2em;
+	float: left;
+	border-radius: 1.5em;
+	margin-left: 0.2em;
+}
+@media only screen and (min-width: 881px) {
+	.ico_sort p {
+		font-size: 1.2em;
+	}
+}
+@media only screen and (max-width: 880px) {
+	.ico_sort p {
+		font-size: 0.8em;
+	}
+}
+.ico_gasoline {
+	background-color: #ff8afb;
+}
+.ico_diesel {
+	background-color: #00e7e4;
+}
+.ico_af {
+	background-color: #ba2add;
+}
+.ico_bio {
+	background-color: #e77d00;
+}
+/****商品情報****/
+@media only screen and (min-width: 881px) {}
+@media only screen and (max-width: 880px) {}
+@media only screen and (min-width: 881px) {
+	.item > div:first-child {
+		width: 30%;
+		margin-right: 2%;
+	}
+	.item .info {
+		width: 68%;
+	}
+}
+@media only screen and (max-width: 880px) {
+	.item {
+		flex-direction: column;
+	}
+}
+@media all {
+	/*�p�r*/
+	.item .info .identify {
+		color: #ffffff;
+		background: #000000;
+		padding: 0.5em;
+		width: 100%;
+	}
+	/*���ʉӏ����*/
+	.item .info p {
+		position: relative;
+		padding-left: 1.8em;
+		font-weight: bold;
+		border-bottom: 1px solid #000000;
+		margin: 5px 0;
+		line-height: 2em;
+	}
+	.item .info p:before {
+		font-family: FontAwesome;
+		content: "\f00c";
+		position: absolute;
+		font-size: 1em;
+		line-height: 1.2em;
+		left: 0;
+		top: 0.2em;
+		color: #ffff00;
+		background: #000000;
+		padding: 0.2em;
+		border-radius: 2px;
+		width: 1.5em;
+		height: 1.5em;
+	}
+}
+/****商品説明****/
+/*解説*/
+.exp {
+	flex-wrap: wrap;
+	margin: 1em 0;
+	width: 100%;
+	line-height: 1.5em;
+}
+.exp .img {
+	text-align: center;
+}
+@media only screen and (min-width: 881px) {
+	.exp {
+		justify-content: space-between;
+	}
+	.exp .text {
+		width: 68%;
+	}
+	.exp .img {
+		width: 30%;
+	}
+	.exp > p {
+		width: 100%;
+	}
+}
+@media only screen and (max-width: 880px) {
+	.exp {
+		flex-direction: column;
+	}
+	.exp .img {
+		margin-top: 1em;
+	}
+}
+.exp .img_l {
+	float: left;
+	text-align: center;
+	margin-right: 10px;
+}
+/*�g�p���@*/
+@media all {
+	#howto {
+		border: 1px solid #dddddd;
+		padding: 10px;
+		margin: 10px 0;
+	}
+	#howto h4 {
+		margin-bottom: 1em;
+		border-bottom: 1px solid #cccccc;
+		padding-bottom: 0.5em;
+	}
+	#howto {
+		line-height: 1.5em;
+	}
+	#howto img {
+		float: right;
+		width: 20%;
+		margin-left: 1em;
+	}
+}
+#howto p.withimg {
+	width: 500px;
+}
+/*�g�p���@����{�^��*/
+#howto .btn {
+	margin: 5px 0;
+}
+/*�̔����*/
+@media all {
+	.data {
+		border: 1px solid #dddddd;
+		margin-bottom: 1em;
+		display: flex;
+	}
+	h4.data_title {
+		font-size: 1.2em;
+		background-color: #888888;
+		color: #ffffff;
+		padding: 0.5em;
+	}
+	.aspect.p_img:before {
+		content: "";
+		display: block;
+		padding-top: 100%;
+	}
+	.detail dl {
+		display: flex;
+		margin: 0;
+	}
+	.detail dl {
+		border-top: 1px dotted #dddddd;
+	}
+	.detail dl dt, .detail dl dd {
+		padding: 1em;
+	}
+	.detail dl dt {
+		width: 8em;
+		font-weight: bold;
+		background-color: #dddddd;
+	}
+	.detail dl dd {
+		width: calc(100% - 8em);
+		margin: 0;
+	}
+}
+@media only screen and (min-width: 881px) {
+	.detail {
+		width: 85%;
+	}
+	.detail dl {
+		width: 50%;
+		height: 50%;
+		float: left;
+	}
+	.detail dl:nth-of-type(1), .detail dl:nth-of-type(2) {
+		border-top: 0;
+	}
+	.detail dl:nth-of-type(odd) {
+		clear: left;
+	}
+	.aspect.p_img {
+		width: 15%;
+		border-left: 1px solid #dddddd;
+	}
+	.aspect > img {
+		height: auto;
+	}
+}
+@media only screen and (max-width: 880px) {
+	.detail {
+		width: 60%;
+	}
+	.detail dl {
+		height: 25%;
+	}
+	.detail dl:nth-of-type(1) {
+		border-top: 0;
+	}
+	.detail dl dt, .detail dl dd {
+		padding: 1em;
+	}
+	.detail dl dt {
+		width: 6em;
+	}
+	.detail dl dd {
+		width: calc(100% - 6em);
+	}
+	.aspect.p_img {
+		width: 40%;
+		border-left: 1px solid #dddddd;
+	}
+}
+@media only screen and (max-width: 500px) {
+	.data {
+		display: block;
+	}
+	.detail, .aspect.p_img {
+		width: 100%;
+	}
+	.aspect.p_img {
+		border-left: 0;
+		border-top: 1px solid #dddddd;
+	}
+}
+/******************************
+ *動画のタイトル
+ ******************************/
+.movie_title {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	background-color: #ddd;
+	padding: 0.5em;
+}

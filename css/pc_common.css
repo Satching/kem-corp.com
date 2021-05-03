@@ -1,0 +1,350 @@
+/********************
+ * 全体設定
+********************/
+html{
+width:100%;
+height:100%;
+overflow: hidden;
+}
+body {
+width:100%;
+height:100%;
+background: #DDDDDD;
+font-family: "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",Osaka,"メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
+color: #666666;
+font-size: 14px;
+line-height: 1.4em;
+-webkit-tap-highlight-color:rgba(0,0,0,0);
+-webkit-text-size-adjust: none;
+-webkit-font-smoothing: antialiased;
+-moz-tap-highlight-color:rgba(0,0,0,0); 
+-moz-text-size-adjust: none;
+-moz-font-smoothing: antialiased;
+-ms-tap-highlight-color:rgba(0,0,0,0); 
+-ms-text-size-adjust: none;
+-ms-font-smoothing: antialiased;
+}
+a {
+text-decoration: none;
+color:#384CA3;
+}
+a:hover{
+color:#4C67DE;
+}
+a:visited{
+color:#8060DE;
+}
+
+/********************
+ * floatバグ回避
+********************/
+.clearfix {
+zoom:1;
+}
+.clearfix:after {
+content: ""; 
+display: block; 
+clear: both;
+}
+
+/********************
+ * リンク透過設定
+********************/
+a:hover{
+opacity:0.7;
+filter:alpha(opacity=70);
+-ms-filter:"alpha(opacity=70)";
+}
+
+/********************
+ * 本体設定
+********************/
+.container {
+overflow: hidden;
+-webkit-backface-visibility: hidden;/*  Prevents Flickering  */
+-moz-backface-visibility: hidden;/*  Prevents Flickering  */
+-ms-backface-visibility: hidden;/*  Prevents Flickering  */
+}
+.inner{
+width: 950px;
+padding: 0 calc(50vw - 475px);
+}
+
+/********************
+ * ヘッダー領域
+********************/
+header {
+height: 70px;
+background-color: #FFDE00;
+position: relative;
+}
+header .logoAria {
+float: left;
+}
+header a.logo {
+height: 50px;
+width: 240px;
+display:block;
+}
+header p.top {
+color: #ffffff;
+font-size: 12px;
+font-weight: normal;
+line-height: 20px;
+}
+header .inqAria {
+float: right;
+height: 65px;
+margin-top: 5px;
+width: 450px;
+}
+
+/********************
+ * スマホメニュー用アイコン
+********************/
+.burger {
+position: absolute;
+float: left;
+padding: 10px;
+top: 4px;
+left: 10px;
+display: none;
+}
+.burger li {
+width: 30px;
+height: 4px;
+background-color: #fff;
+border-radius: 3px;
+margin: 5px 0;
+}
+.burger.open li {background-color: #d9dde1;}
+
+/********************
+ * メニュー
+********************/
+nav {
+height: 30px;
+background: #DFDFDF;
+}
+nav li {
+float: left;
+display: inline-block;
+}
+nav li:first-child, nav li:last-child, nav li:nth-last-child(2), nav li:nth-last-child(3){
+display: none;
+}
+nav li a, nav li a:visited {
+font-size: 16px;
+font-weight: bold;
+padding: 8px 35px 0 0;
+color: #999999;
+display: block;
+text-shadow:
+-1px -1px 0px #ffffff,/*左上*/
+1px -1px 0px #ffffff,/*右上*/
+1px 1px 0px #ffffff,/*右下*/
+-1px 1px 0px #ffffff,/*左下*/
+0px 1px 0px #ffffff,/*下*/
+0px -1px 0px #ffffff,/*上*/
+1px -0px 0px #ffffff,/*右*/
+0px -1px 0px #ffffff,/*左*/
+-2px -2px 0px #ffffff,/*左上*/
+2px -2px 0px #ffffff,/*右上*/
+2px 2px 0px #ffffff,/*右下*/
+-2px 2px 0px #ffffff,/*左下*/
+0px 2px 0px #ffffff,/*下*/
+0px -2px 0px #ffffff,/*上*/
+2px -0px 0px #ffffff,/*右*/
+0px -2px 0px #ffffff,/*左*/
+1px 1px 4px #000000;
+}
+nav li a:hover {
+color: navy;
+opacity: 1;
+}
+
+/********************
+ * コンテンツ領域
+********************/
+.body {
+background: #ffffff;
+height:calc(100vh - 150px);
+overflow-y: scroll;
+overflow-x: hidden;
+position: relative;
+}
+.body .scroll{
+padding: 10px calc(50vw - 475px);
+overflow: hidden;
+}
+/* コンテンツ内部高さ処理　*/
+.scroll > div {
+padding-bottom: 32767px;
+margin-bottom: -32767px;
+}
+/* 本体領域*/
+.contents{
+width: calc(100% - 210px);
+padding-bottom: 10px;
+margin-right:10px;
+float: left;
+}
+
+/********************
+ * バナーエリア
+********************/
+/* サイドリンク */
+.side{
+width: 200px;
+float: right;
+}
+.side a {
+width: 200px;
+height: 130px;
+margin-bottom: 10px;
+display: block;
+}
+.side a img {
+visibility: hidden;
+}
+/* bg23232 */
+.bun_232 {
+background: url(/img/side/bun_232.png);
+}
+/* bun_208 */
+.bun_208 {
+background: url(/img/side/bun_208.png);
+}
+/* bun_db */
+.bun_db {
+background: url(/img/side/bun_db_deaselcare.png);
+}
+/* kigu */
+.kigu {
+background: url(/img/side/side_kigu.png);
+}
+/* 本体導入部 */
+.introduction{
+height: auto;
+position: relative;
+}
+
+/********************
+ * パンくずリスト
+********************/
+#breadCrumb{
+font-size: 0.9em;
+height: 15px;
+}
+#breadCrumb li {
+float: left;
+list-style: outside none none;
+margin-right: 5px;
+}
+#breadCrumb li:after {
+content: "　> ";
+}
+#breadCrumb li:last-child{
+font-weight:bold;
+}
+#breadCrumb li:last-child:after{
+content: "";
+}
+#breadCrumb li:empty {
+  display: none;
+}
+
+/********************
+ * フッター
+********************/
+footer{
+background: #dddddd;
+clear: both;
+height:50px;
+}
+footer.inner{
+padding-top: 10px;
+}
+footer .link{
+float:left;
+}
+small{
+float:right;
+}
+
+/********************
+ * 各種パーツ
+********************/
+h1 {
+border-bottom: 2px solid #888888;
+color: #003366;
+font-size: 20px;
+font-weight:bold;
+margin: 5px 0;
+padding: 5px 0;
+}
+h2{
+font-size:14px;
+font-weight:bold;
+margin-bottom: 10px;
+color:#555555;
+}
+/*pdf&動画ボタン*/
+.pdf,.movie{
+width:300px;
+height:60px;
+background:url(../../img/btn_pdf.png) no-repeat;
+margin:10px 0;
+overflow:auto;
+display:block;
+}
+.movie{
+background:url(../../img/btn_movie.png) no-repeat;
+}
+.pdf p,.movie p{
+color:#ffffff;
+padding-left:64px;
+padding-top:11px;
+line-height:14px;
+font-weight:bold;
+font-size:14px;
+}
+.thin {
+font-weight: normal;
+}
+.tiny {
+font-size: 11px;
+}
+.red{
+color:#ff0000;
+}
+
+/********************
+ * ヘッダー無しスタイル
+********************/
+@media only screen and (min-width: 951px) {
+body.no-header {
+background: #ffffff;
+}
+.no-header header, .no-header nav, .no-header .side, .no-header .introduction{
+display: none;
+}
+.no-header .body {
+background: none;
+height: calc(100vh - 50px);
+}
+.no-header .scroll {
+padding: 0 calc(50vw - 475px);
+}
+.no-header .scroll > div {
+margin-bottom: 0;
+padding-bottom: 0;
+}
+.no-header .contents {
+float: none;
+width: 100%;
+padding: 0;
+margin: 0;
+line-height:2em;
+}
+}

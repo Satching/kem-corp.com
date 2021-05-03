@@ -1,0 +1,307 @@
+ul.menu {
+	display: none;
+	height: 0;
+}
+h1 {
+	font-weight:bold;
+	height:auto;
+	text-align: center;
+	color : #000000;
+	text-shadow: 1px 1px 3px #CFBDD7;
+}
+.introduction h2 {
+	text-align:center;
+	border-top: double red;
+	border-bottom: double red;
+}
+.introduction ul {
+	text-align:center;
+}
+.introduction li {
+	font-weight: bold;
+}
+.introduction li:last-child {
+	text-align:right;
+}
+h3 {
+	background-image: url(/upload/img/top/title.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position:right;
+	color:#000000;
+	margin-bottom:2vw;
+	padding-left: 2vw;
+}
+h4 {
+	color:#ffffff;
+	background:#666666;
+	padding-left: 2vw;
+}
+/************************
+* メインイメージ
+************************/
+@media only screen and (min-width: 961px){
+	.main_img{  
+		width: 100%;  
+		height: 281px;  
+		background-image: url(/upload/img/top/main.png);
+		background-repeat: no-repeat;
+		background-size: contain;
+	}
+}
+/************************
+* PC専用設定
+************************/
+@media only screen and (min-width: 961px){
+	html{
+		background: url(../../img/effect229/bg.png) center repeat-y;
+	}
+	header, nav {
+		display: none;
+		height: 0;
+	}
+	.main_img {
+		height:281px;
+	}
+	ul.menu {
+		display: block;
+		height: 54px;
+		background: linear-gradient(#F5F5F5, #757575);
+	}
+	ul.menu a {
+		width: calc(25% - 1px);
+		border-right: 1px ridge #666666;
+		height: 54px;
+		float: left;
+		background-repeat: no-repeat;
+		background-position: 5px center;
+		text-align:center;
+	}
+	ul.menu a:last-child {
+		border-right: 0;
+	}
+	ul.menu .about {
+		background-image: url(../img/top/ico_about.png);
+	}
+	ul.menu .lineup {
+		background-image: url(../img/top/ico_lineup.png);
+	}
+	.menu .shop {
+		background-image: url(../img/top/ico_shop.png);
+	}
+	ul.menu .inquiry{
+		background-image: url(../img/top/ico_inquiry.png);
+	}
+	ul.menu a li {
+		font-size: 20px;
+		font-weight: bold;
+		padding: 13px;
+		color: #666666;
+		display: block;
+		text-shadow:
+		-1px -1px 0px #ffffff,/*左上*/
+		1px -1px 0px #ffffff,/*右上*/
+		1px 1px 0px #ffffff,/*右下*/
+		-1px 1px 0px #ffffff,/*左下*/
+		0px 1px 0px #ffffff,/*下*/
+		0px -1px 0px #ffffff,/*上*/
+		1px -0px 0px #ffffff,/*右*/
+		0px -1px 0px #ffffff,/*左*/
+		-2px -2px 0px #ffffff,/*左上*/
+		2px -2px 0px #ffffff,/*右上*/
+		2px 2px 0px #ffffff,/*右下*/
+		-2px 2px 0px #ffffff,/*左下*/
+		0px 2px 0px #ffffff,/*下*/
+		0px -2px 0px #ffffff,/*上*/
+		2px -0px 0px #ffffff,/*右*/
+		0px -2px 0px #ffffff,/*左*/
+		1px 1px 4px #000000;
+	}
+	h1 {
+		font-size: 40px;
+	}
+	.introduction h2 {
+		font-size: 24px;
+		margin: 10px 0;
+	}
+	.introduction ul {	
+		padding:10px;
+	}
+	.introduction img {
+		float: left;
+		width: 38%;
+		margin-right: 2%;
+	}
+	.introduction .text {
+		float: right;
+		width: 60%;
+	}
+	/********************
+	 * 各項目共通・幅
+	********************/
+		/* 共通 */
+	.box {
+		padding:5px;
+	}
+	h3 {
+		height:40px;
+		font-size:18px;
+		margin-bottom:5px;
+		padding-top:15px;
+		padding-left:10px;
+		background-size: contain;
+	}
+	h4 {
+		font-size:14px;
+		padding:5px;
+		margin-bottom:5px;
+		clear:both;
+	}
+	figcaption {
+		font-size: 80%;
+		padding:2px 0;
+		margin:2px 0;
+		line-height:1em;
+	}
+	.half {
+		width:450px;
+		float:left;
+	}
+	.half:nth-child(odd) {
+		margin-left:10px;
+	}
+	.box img {
+		height:auto;
+	}
+	.box .full {
+		clear:both;
+		border:solid 1px #FFFF00;
+		padding:5px;
+	}
+	.f-right {
+		float:right;
+		margin-left:10px;
+	}
+	.f-left {
+		float:left;
+		margin-right:10px;
+	}
+	.figure {
+		text-align: center;
+	}
+	/********************
+	 * BGディーゼルケア
+	********************/
+		/* 様子図解 */
+	.yousu div {
+		margin:5px;
+	}
+	.yousu .f-left {
+		width:450px;
+	}
+		.yousu .f-right {
+		width:440px;
+	}
+		/* スラッジ画像 */
+	.sludge .text1 {
+		width:495px;
+	}
+	.sludge .img1 {
+		width:395px;
+	}
+	.sludge .text2 {
+		width:690px;
+	}
+		
+	/********************
+	 * 効果
+	********************/
+	.effect li {
+		font-size:14px;
+		font-weight:bold;
+		margin:5px 0;
+		border-bottom:1px solid #000000;
+		color:#006666;
+	}
+	.effect li:before {
+		content:url(../../img/list_ico.png);
+	}
+		
+	/********************
+	 * 使用器具・液剤
+	********************/
+	.item .tool {
+		text-align:center;
+	}
+	.item .tool img {
+		margin:0 5px;
+	}
+	.item .liquid {
+		text-align:center;
+	}
+	.item .liquid img {
+		width:300px;
+	}
+	.item .liquid h4 {
+		background:#cccccc;
+		color:#666666;
+		font-size:14px;
+	}
+	.item .liquid h5 {
+		font-size:24px;
+		font-weight:bold;
+	}
+	.item .liquid .ap1 {
+		color:#5A80BC;
+	}
+	.item .liquid .ap2 {
+		color:#834397;
+	}
+	.item .half dl {
+		width:400px;
+		margin:auto;
+	}
+	.item .half dd {
+		text-align:left;
+	}
+	.item .liquid .full ul{
+		padding:1rem;
+		text-align:left;
+	}	
+	/********************
+	 * サイトトップリンク
+	********************/
+	.sitetop {
+		height:30px;
+		position:absolute;
+		top:10px;
+		left:10px;
+	}
+	.sitetop a {
+		font-size:12px;
+		color:#ffffff;
+		line-height:12px;
+		margin-top:9px;
+	}
+		
+	/********************
+	 * ページトップリンク
+	********************/
+	.pagetop {
+		text-align:right;
+		padding-right:10px;
+	}
+	.pagetop a {
+		font-size:12px;
+	}
+}
+/*PC以外設定********************************************/
+@media only screen and (max-width: 960px){
+	.siro{
+		display:flex;
+	}
+	.spImg60{
+	width:35%;
+	margin:auto;
+	}
+}

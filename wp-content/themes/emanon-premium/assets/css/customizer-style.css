@@ -1,0 +1,90 @@
+/**
+ * Customizer style.
+ *
+ * @since 1.0.0
+ * @package Emanon Premium
+ */
+
+.customize-control-description {
+	font-style: normal !important;
+}
+
+#accordion-section-emanon_header_eyecatch .accordion-section-title,
+#accordion-section-emanon_header_image_slider .accordion-section-title,
+#accordion-section-emanon_header_content_slider .accordion-section-title,
+#accordion-section-emanon_header_pickup_slider .accordion-section-title,
+#accordion-section-emanon_header_pagebox_slider .accordion-section-title,
+#accordion-section-emanon_header_video .accordion-section-title {
+	padding-left: 20px;
+	border-bottom: 1px dashed #e2e5e8;
+}
+
+#customize-controls .customize-section-title span.customize-action {
+	font-size: 12px;
+}
+
+#customize-controls .customize-pane-child .customize-section-title h3 {
+	font-size: 14px;
+}
+
+.customize-section-description-container .customize-section-description {
+	padding: 16px 8px;
+	border-top: solid 3px #0073aa;
+	background-color: #fff;
+	box-shadow: 0 0 2px 0 rgba(0,0,0,0.1);
+}
+
+#customize-control-header_eyecatch_layout,
+#customize-control-header_eyecatch_message_center,
+#customize-control-header_eyecatch_responsive_image,
+#customize-control-header_eyecatch_image_sp,
+#customize-control-header_eyecatch_text_animation,
+#customize-control-header_eyecatch_shortcode,
+#customize-control-header_eyecatch_mp4_controls_sp,
+#customize-control-header_eyecatch_movie_controls,
+#customize-control-display_header_eyecatch_search_form,
+#customize-control-header_eyecatch_target_brank,
+#customize-control-header_eyecatch_title_fontsize_sp,
+#customize-control-header_eyecatch_particles_border_opacity,
+#customize-control-header_eyecatch_separator,
+#customize-control-header_eyecatch_height_sp,
+[id^="customize-control-header_image_slider_image_target_brank_"]
+#customize-control-header_image_slider_effect_speed,
+#customize-control-header_image_slider_title_fontsize_sp,
+#customize-control-header_image_slider_text_animation,
+#customize-control-header_image_slider_speed,
+#customize-control-header_image_slider_height_sp,
+#customize-control-header_image_slider_separator,
+#customize-control-header_content_slider_scrol_post,
+#customize-control-header_content_slider_read_more_text,
+#customize-control-header_content_slider_text_animation,
+#customize-control-header_content_slider_speed,
+#customize-control-header_content_slider_height_sp,
+#customize-control-header_content_slider_title_fontsize_sp,
+#customize-control-header_content_slider_separator,
+#customize-control-header_pagebox_slider_speed,
+#customize-control-header_pickup_slider_scrol_post,
+#customize-control-display_header_pickup_slider_cat,
+#customize-control-header_pickup_slider_center_mode_sp,
+#customize-control-header_pickup_slider_text_animation,
+#customize-control-header_pickup_slider_speed,
+#customize-control-display_header_pagebox_title,
+#customize-control-header_pagebox_text_animation,
+#customize-control-header_pagebox_slider_height_sp,
+#customize-control-header_pagebox_slider_title_fontsize_sp,
+[id^="customize-control-header_slider_image_target_brank_"],
+[id^="customize-control-header_pagebox_message_"], 
+#customize-control-header_pickup_background_image_sp,
+#customize-control-header_pickup_slider_height_sp {
+	margin-bottom: 32px;
+	padding-bottom: 16px;
+	border-bottom: 1px solid #ddd;
+	box-shadow: 0px 1px 0px #fff;
+}
+
+[id^="customize-control-pagebox_message_"],
+#customize-control-pagebox_title {
+	margin-bottom: 32px;
+	border-bottom: 1px solid #ddd;
+	box-shadow: 0px 1px 0px #fff;
+}

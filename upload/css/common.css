@@ -1,0 +1,324 @@
+@charset "utf-8";
+/*****************************************
+ *サイト内共通
+*****************************************/
+*, ::before, ::after{
+	box-sizing:border-box;
+}
+/***リンク体裁***/
+a{
+	font-weight:bold;
+}
+.entry-content a:hover,
+.widget li a:hover{
+	text-decoration:none;
+	color:#bf8d00;
+}
+/***clearfix***/
+.clearfix:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+/***flex***/
+.flex{
+		display:flex;
+	width:100%;
+}
+/*@media only screen and (max-width: 970px){
+	.flex{
+		display:block;
+	}
+	.flex > *{
+		width:100%;
+	}
+}*/
+/*****************************************
+ 赤文字
+*****************************************/
+.red{
+	color:#f00;
+}
+/*****************************************
+ 正方形造作
+*****************************************/
+.aspect {
+	position: relative;
+	height: auto;
+}
+.aspect > * {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.aspect p {
+	font-size:1.25vw;
+	line-height:1.5em;
+}
+	/*html��aspect�Ɠ��v�f�ɃN���X�w��
+	.aspect:before {
+		width: n%;
+		content: "";
+		display: block;
+		padding-top: 75%;
+	}
+	*/
+/*****************************************
+ *画像
+*****************************************/
+img{
+	width:100%;
+	height:auto;
+}
+/*****************************************
+ *パンくずリスト
+*****************************************/
+.breadcrumbs { 
+	margin-bottom:40px;
+}
+.home .breadcrumbs{
+	display:none;
+}
+
+/*****************************************
+ *ヘッダー
+*****************************************/
+@media only screen and (min-width: 700px){
+	/*header #logo .custom-logo-link{
+		display:block;
+		width:250px!important;
+	}
+#logo img.custom-logo{
+	width:100%!important;
+	max-width:100%;
+}*/
+	.site-branding#logo .custom-logo{
+		max-width:300px;
+		max-height:90px;
+	}
+}
+/*****************************************
+ *pdf&動画へのリンク
+*****************************************/
+.pdf,.movie{
+width:300px;
+height:60px;
+background:url(/upload/img/common/btn_pdf.png) no-repeat;
+margin:10px 0;
+overflow:auto;
+display:block;
+}
+.movie{
+background:url(/upload/img/common/btn_movie.png) no-repeat;
+}
+.pdf p,.movie p{
+color:#ffffff;
+padding-left:64px;
+padding-top:11px;
+line-height:14px;
+font-weight:bold;
+font-size:14px;
+}
+/*****************************************
+ * �o�i�[�G���A�i���X�|���V�u�j
+*****************************************/
+@media all{
+	#custom_html-2 a{
+		margin-bottom:0.5rem;
+		display: block;
+	}
+}
+
+/*****************************************
+ * サイトヘッダー　20181211　一時撤去
+*****************************************/
+/*@media all{
+	.site-header{
+		background-color:#F4D400;
+	}
+	.beta{
+		font-size:1.5em;
+	}
+	.main-navigation ul a{
+		font-size:1.8em;
+	}
+}
+@media (min-width: 880px) {
+	.site-branding {
+		width: 100%;
+		float:none;
+	}
+	.main-navigation {
+		width: 100%;
+		margin:0;
+		float:none;
+	}
+	.main-navigation:after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+}*/
+/*****************************************
+ *���̑�
+*****************************************/
+.entry-title{
+	border-bottom: 2px solid #888888;
+	color: #003366;
+	font-size: 2em;
+	font-weight:bold;
+	margin: 5px 0;
+	padding: 5px 0;
+}
+@media only screen and (max-width: 880px){
+	.entry-title{
+		font-size: 1.5em;
+	}
+}
+h2{
+	line-height:1.5em;
+	font-weight:bold;
+	margin-bottom: 10px;
+	color:#555555;
+}
+@media (min-width: 880px) {
+	h2{
+		font-size:1.2em;
+	}
+}
+.entry-content ul{
+	margin:0;
+}
+.entry-content li{
+	margin:0;
+}
+.entry-content ul li::before{
+	content:none;
+	float:none;
+}
+/* ウィジェット内リンクバナー
+ #custom_html-4
+*****************************************/
+#custom_html-4 a{
+	display:flex;
+	margin-bottom:1em;
+}
+#custom_html-4 a:hover{
+	background:#000;
+}
+#custom_html-4 a:hover img{
+	opacity:0.8;
+}
+/*
+フッターエリア体裁
+*****************************/
+@media only screen and (min-width: 881px) {
+	.footer-widgets > .block{
+		display:flex;
+		justify-content:space-between;
+	}
+	.footer-widgets > .block > div:first-of-type{
+		width:35%;
+	}
+	.footer-widgets > .block > div:last-of-type{
+		width:60%;
+	}
+}
+.footer-widgets .widget-title{
+	padding:0.2em 0;
+	border-bottom:2px solid #666;
+}
+/* ウィジェット内商品分類メニュー
+ #menu-classification
+*****************************************/
+#menu-classification li{
+	position:relative;
+	padding-left:1rem;
+}
+#menu-classification li::before {
+	position: absolute;
+    left: 0;
+	font-family:FontAwesome;
+    content: '\f061';
+	color: #d8a600;
+}
+#menu-classification a{
+	display:block;
+	margin-left:0.5rem;
+}
+#menu-classification li:hover a{
+	margin-left:0;
+}
+/*フッターエリア内専用体裁*/
+.footer-widgets #menu-classification li{
+	display:flex;
+	align-items:center;
+}
+@media only screen and (min-width: 881px) {
+	.footer-widgets #menu-classification{
+		display:flex;
+		justify-content:space-between;
+		flex-wrap:wrap;
+	}
+	.footer-widgets #menu-classification li{
+		width:calc(50% - 0.5rem);
+		height:3em;
+		margin-bottom:0;
+		padding-bottom:0;
+	}
+	.footer-widgets #menu-classification li a{
+		display:flex;
+		flex-direction:column;
+		line-height:1;
+	}
+}
+@media only screen and (max-width: 880px) {
+	.footer-widgets #menu-classification li:last-child{
+		border:0;
+	}
+	.footer-widgets #menu-classification li:not(#menu-item-262) a br{
+		display:none;
+	}
+}
+/*
+会社案内体裁 #text-3　フッターエリア内専用
+*****************************************/
+@media only screen and (min-width: 881px) {
+	.footer-widgets #text-3 .textwidget{
+		display:flex;
+		justify-content:space-between;
+	}
+	.footer-widgets #text-3 .textwidget > div:first-of-type{
+		width:calc(100% - 2rem - 17em);
+	}
+	.footer-widgets #text-3 .textwidget > div:last-of-type{
+		width:17em;
+	}
+}
+@media only screen and (max-width: 880px) {
+	.footer-widgets #text-3 .textwidget .company_info dl{
+		display:flex;
+		flex-wrap:wrap;
+		margin-top:1em;
+	}
+	.footer-widgets #text-3 .textwidget .company_info dt:first-of-type,
+	.footer-widgets #text-3 .textwidget .company_info dd:first-of-type{
+		width:100%;
+	}
+	.footer-widgets #text-3 .textwidget .company_info dt:not(:first-of-type){
+		width:3em;
+	}
+	.footer-widgets #text-3 .textwidget .company_info dd:not(:first-of-type){
+		width:calc(100% - 4em);
+	}
+}
+@media only screen and (min-width: 971px){
+	#text-3 div{
+		font-size:1rem;
+	}
+	#text-3 dl *{
+		font-size:1.2rem;
+	}
+}

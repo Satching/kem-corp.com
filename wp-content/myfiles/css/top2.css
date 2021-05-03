@@ -1,0 +1,256 @@
+/************************
+* ヘッダー位置開放化
+************************/
+@media only screen and (min-width: 961px){
+	body.custom-background{
+		background:#f5f5f5 url(../img/top/bg.png) repeat-y center;
+	}
+	#page{
+		position:relative;
+	}
+	#masthead{
+		position:absolute;
+		top:281px;
+	}
+	.main-navigation{
+		display:flex;
+		justify-content:center;
+	}
+	.main-navigation .main-navigation-menu{
+		float:none;
+	}
+	#headimg{
+		position:relative;
+		background:#ffde00;
+		height:281px;
+	}
+	#headimg:before{
+		position:absolute;
+		top:0;
+		left:0;
+		display:block;
+		width:50vw;
+		height:100%;
+		background: url(../img/top/main_left.png) repeat-x;
+		z-index:0;
+		content:"";
+	}
+	.header-image img{
+		position:absolute;
+		left:-50vw;
+		right:-50vw;
+		width:auto;
+		margin:auto;
+	}
+	.header-widget{
+		display:none;
+	}
+	#logo{
+		display:none;
+	}
+	.site-content{
+		padding-top:90px;
+	}
+	.container{
+	}
+}
+@media only screen and (max-width: 960px){
+}
+/************************
+* 見出しスタイル
+************************/
+h1.entry-title {
+	display:block;
+	height: auto;
+	font-weight: bold;
+	font-size: 40px;
+	text-align: center;
+	color: #000000;
+	text-shadow: 1px 1px 3px #CFBDD7;
+	margin: 5px 0;
+	padding: 5px 0;
+	border:0;
+}
+h3 {
+	background-image: url(/upload/img/top/title.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: right;
+	color: #000000;
+	margin-bottom: 2vw;
+	padding-left: 2vw;
+}
+@media only screen and (min-width: 961px){
+	h3 {
+		height: 40px;
+		font-size: 18px;
+		margin-bottom: 5px;
+		padding-top: 15px;
+		padding-left: 10px;
+		background-size: contain;
+	}
+}
+h4 {
+	color: #ffffff;
+	background: #666666;
+	padding-left: 2vw;
+}
+@media only screen and (min-width: 961px){
+	h4 {
+		font-size: 14px;
+		padding: 5px;
+		margin-bottom: 5px;
+		clear: both;
+	}
+}
+.figure {
+	text-align: center;
+}
+@media only screen and (min-width: 961px){
+	figcaption {
+		font-size: 80%;
+		padding: 2px 0;
+		margin: 2px 0;
+		line-height: 1em;
+	}
+}
+/************************
+* section
+************************/
+@media only screen and (min-width: 961px){
+	section{
+		padding:1rem;
+	}
+}
+
+/************************
+* 導入部
+************************/
+@media only screen and (min-width: 961px){
+	#introduction .flex{
+		justify-content:space-between;
+	}
+	#introduction .flex div.img{
+		width:40%;
+	}
+	#introduction .flex div.text{
+		width:55%;
+	}
+	#introduction h2 {
+		text-align: center;
+		border-top: double red;
+		border-bottom: double red;
+	}
+	#introduction ul{
+		padding:1rem;
+		text-align:center;
+	}
+	#introduction li {
+		font-weight: bold;
+	}
+	#introduction li:last-child {
+		text-align: right;
+	}
+}
+
+/************************
+* ▼様子の図解▼
+************************/
+@media only screen and (min-width: 961px){
+	#deaselcare .flex{
+		justify-content:space-between;
+		margin-bottom:0.5rem;
+	}
+	#deaselcare .yousu div.img{
+		width:57.5%;
+	}
+	#deaselcare .yousu div.text{
+		width:40%;
+	}
+	#deaselcare .yousu div.text .siro{
+		width:30%;
+		margin:auto;
+	}
+	#deaselcare .sludge .text1 .text{
+		width:57.5%;		
+	}
+	#deaselcare .sludge .text1 .img{
+		width:40%;		
+	}
+	#deaselcare .sludge .text2{
+		flex-direction:row-reverse;
+	}
+	#deaselcare .sludge .text2 .text{
+		width:67.5%;
+		
+	}
+	#deaselcare .sludge .text2 .img{
+		width:30%;
+		
+	}
+}
+
+/************************
+* ▼効果▼
+************************/
+@media only screen and (min-width: 961px){
+	#effect ul{
+		list-style-position:inside;
+		list-style-image: url(/upload/img/common/list_ico.png);
+	}
+	#effect li {
+		font-size: 14px;
+		font-weight: bold;
+		margin: 5px 0;
+		border-bottom: 1px solid #000000;
+		color: #006666;
+	}
+}
+
+/************************
+* ▼使用器具・液剤▼
+************************/
+/***▼器具▼***/
+@media only screen and (min-width: 961px){
+	#item .tool{
+		justify-content:space-around;
+	}
+	#item h4 {
+		background: #cccccc;
+		color: #666666;
+		font-size: 1rem;
+	}
+}
+/***▼液剤▼***/
+@media only screen and (min-width: 961px){
+	#item h4,
+	#item h5,
+	#item dt{
+		text-align:center;
+	}
+	#item dt{
+		margin:1rem 0;
+	}
+	#item .fluid{
+		justify-content:space-around;
+		flex-wrap:wrap;
+	}
+	#item .product{
+		width:35%;
+	}
+	#item .product h5 {
+		font-size: 24px;
+		font-weight: bold;
+		color: #5A80BC;
+	}
+	#item .product .flex{
+		flex-direction:column;
+	}
+	#item .border-yellow {
+		border: solid 1px #FFFF00;
+		padding: 1rem;
+		margin:1rem 0;
+	}
+}
+@media only screen and (min-width: 961px){
+}

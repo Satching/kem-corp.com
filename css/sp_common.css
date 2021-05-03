@@ -1,0 +1,242 @@
+@media only screen and (max-width: 950px) {
+html{
+overflow-y: auto;
+}
+p{
+font-size:120%;
+}
+/******************************
+ * 本体幅
+******************************/
+.inner{
+width: 98%;
+padding: 0.5em 1%;
+}
+.scroll > div {
+width:100%;
+margin: 0;
+padding:0;
+}
+/********************
+ * ヘッダー領域
+********************/
+header {
+height: 70px;
+z-index: 2;
+position: fixed;
+top: 0;
+right: 0;
+left: 0;
+}
+header .logoAria{
+float: right;
+text-align:right;
+margin:0;
+}
+header .inqAria {
+height: 0;
+display: none;
+margin:0;
+}
+header .inqAria img{
+width:100%;
+}
+
+/********************
+ * スマホメニュー用アイコン
+********************/
+.burger {
+display: block;
+width:30px;
+height:30px;
+top: 0;
+bottom: 0;
+margin: auto;
+}
+
+/********************
+ * メニュー
+********************/
+nav {
+width: 93%;
+height: 100vh;
+position: fixed;
+left: 0;
+top: 0;
+margin: 0;
+opacity: 0;
+background-color: #1d2d35;
+}
+/*開いた状態*/
+nav.open {
+opacity: 1;
+}
+/*締まった後の状態*/
+nav.close {
+opacity: 0;
+/*締まる時の透過*/
+animation: slideOut .3s ease-in-out;
+-webkit-animation: slideOut .3s ease-in-out;
+-moz-animation: slideOut .3s ease-in-out;
+}
+@-webkit-keyframes slideOut {
+0%		{opacity: 1;}
+99%		{opacity: 1;}
+100%	{opacity: 0;}
+}
+@-moz-keyframes slideOut {
+0%		{opacity: 1;}
+99%		{opacity: 1;}
+100%	{opacity: 0;}
+}
+@keyframes slideOut {
+0%		{opacity: 1;}
+99%		{opacity: 1;}
+100%	{opacity: 0;}
+}
+nav.inner{
+padding: 0;
+}
+nav ul {
+height: 100%;
+overflow-y: auto;
+padding-left:0;
+}
+nav li, nav li:first-child, nav li:last-child, nav li:nth-last-child(2), nav li:nth-last-child(3){
+display: block;
+float: none;
+}
+nav li a {
+font-weight: normal;
+padding: 4px 35px 0 0;
+color: #9aa6af;
+display: block;
+text-shadow: none;
+padding: 22px 25px;
+letter-spacing: 3px;
+font-size: 14px;
+}
+nav li:first-child a {
+padding: 30px 25px;
+}
+nav li a.logo {
+display: none;
+}
+nav li a.active {
+color: #fff;
+background-color: #ddbc00;
+}
+nav li a:hover {
+opacity: 1;
+color: #fff;
+background-color: #19252c;
+}
+nav li:first-child a.active, nav li:first-child a:hover {
+}
+
+/********************
+ * コンテンツ領域
+********************/
+.content {
+z-index: 1;
+background:#DDDDDD;
+padding-top: calc(70px + 0.5em);
+/* 初期値 （演出用）*/
+-webkit-transform: translate3d(0,0,0);
+-moz-transform: translate3d(0,0,0);
+transform: translate3d(0,0,0);
+}
+/* 本体領域*/
+.body{
+height: auto;
+overflow-y:visible;
+}
+.body .scroll{
+width: 98%;
+margin: auto;
+}
+/* コンテンツ内部高さ処理　*/
+.scroll > div{
+float:none;
+padding-bottom: 0;
+margin-bottom: 0;
+}
+#breadCrumb {
+height:auto;
+}
+/******************************
+ * バナーエリア
+******************************/
+.side a{
+width:100%;
+height: auto;
+margin-bottom: 0.2em;
+background: none;
+}
+.side a img{
+visibility: visible;
+width: 100%;
+}
+
+/********************
+ * フッター
+********************/
+footer{
+height: 50px;
+}
+footer .link {
+display: none;
+}
+small {
+text-align: center;
+}
+
+/********************
+ * メニュー開閉時の演出
+********************/
+/*本体の退き方*/
+header.open, .content.open {
+animation: open .5s ease-in-out;
+-webkit-animation: open .5s ease-in-out;
+-moz-animation: open .5s ease-in-out;
+transform: translate3d(240px,0,0);
+-webkit-transform: translate3d(240px,0,0);
+-moz-transform: translate3d(240px,0,0);
+}
+@-webkit-keyframes open {
+0%{-webkit-transform: translate3d(0,0,0);}
+70%{-webkit-transform: translate3d(260px,0,0);}
+100%{-webkit-transform: translate3d(240px,0,0);}
+}
+@-moz-keyframes open {
+0%{-moz-transform: translate3d(0,0,0);}
+70%{-moz-transform: translate3d(260px,0,0);}
+100%{-moz-transform: translate3d(240px,0,0);}
+}
+@keyframes open {
+0%{transform: translate3d(0,0,0);}
+70%{transform: translate3d(260px,0,0);}
+100%{transform: translate3d(240px,0,0);}
+}
+/*本体の戻り方*/
+header.close,.content.close {
+animation: close .3s ease-in-out;
+-webkit-animation: close .3s ease-in-out;
+-moz-animation: close .3s ease-in-out;
+transform: translate3d(0,0,0);
+-webkit-transform: translate3d(0,0,0);
+-moz-transform: translate3d(0,0,0);
+}
+@-webkit-keyframes close {
+0%{-webkit-transform: translate3d(240px,0,0);}
+100%{-webkit-transform: translate3d(0,0,0);}
+}
+@-moz-keyframes close {
+0%{-moz-transform: translate3d(240px,0,0);}
+100%{-moz-transform: translate3d(0,0,0);}
+}
+@keyframes close {
+0%{transform: translate3d(240px,0,0);}
+100%{transform: translate3d(0,0,0);}
+}
+}
